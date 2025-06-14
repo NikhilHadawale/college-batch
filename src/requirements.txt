@@ -1,0 +1,4 @@
+Course
+Faculty
+Batch
+Student

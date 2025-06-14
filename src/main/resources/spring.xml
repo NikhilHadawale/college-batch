@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+    <bean id="course1" class="com.exponent.entity.Course">
+        <property name="courseId" value="1" />
+        <property name="courseName" value="BSC"/>
+    </bean>
+
+    <bean id="course2" class="com.exponent.entity.Course">
+        <property name="courseId" value="2" />
+        <property name="courseName" value="MSC"/>
+    </bean>
+
+    <bean id="faculty1" class="com.exponent.entity.Faculty" autowire="byName">
+        <property name="facultyId" value="1" />
+        <property name="facultyName" value="Don Joe"/>
+    </bean>
+
+    <bean id="faculty2" class="com.exponent.entity.Faculty" autowire="byName">
+        <property name="facultyId" value="2" />
+        <property name="facultyName" value="Lafde tafde"/>
+    </bean>
+
+    <bean id="batch" class="com.exponent.entity.Batch" autowire="byName">
+        <property name="batchId" value="1"/>
+        <property name="batchName" value="batch-58"/>
+    </bean>
+
+    <bean id="student" class="com.exponent.entity.Student" autowire="byType">
+        <property name="studentId" value="1"/>
+        <property name="studentName" value="Donald Trumph"/>
+    </bean>
+
+</beans>
